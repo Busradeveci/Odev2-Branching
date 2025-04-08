@@ -23,12 +23,12 @@ df['star_ratings'] = calculate_star_ratings(df)
 
 # 2. Analiz: Ülkelere göre ortalama puanlar (ilk 10)
 country_avg_points = df.groupby('country')['points'].mean().sort_values(ascending=False).head(10)
-print("En Yüksek Ortalama Puana Sahip 10 Ülke:")
+print("10 Countries with the Highest Average Score:")
 print(country_avg_points)
 
 # 3. Görselleştirme: Yıldız derecelerinin dağılımı
 plt.figure(figsize=(8, 6))  # Grafik boyutunu ayarlıyoruz
-df['star_ratings'].value_counts().sort_index().plot(kind='bar', color='skyblue')  # Çubuk grafik çiziyoruz
+df['star_ratings'].value_counts().sort_index().plot(kind='bar', color='orange')  # Çubuk grafik çiziyoruz
 plt.title('Yıldız Derecelerinin Dağılımı')  # Başlık
 plt.xlabel('Yıldız Sayısı')  # X ekseni etiketi
 plt.ylabel('İnceleme Sayısı')  # Y ekseni etiketi
