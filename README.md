@@ -1,24 +1,28 @@
-# Ödev2-Branching - Şarap İncelemeleri Analizi
+# Homework 2 - Branching - Wine Reviews Analysis
+This project was created for the AI and Technology Academy GitHub Assignment 2. It uses the "Wine Reviews" dataset from Kaggle to convert wine ratings into star ratings and performs analysis.
 
-Bu proje, Yapay Zeka ve Teknoloji Akademisi Git GitHub Ödevi 2 için hazırlanmıştır. Kaggle’dan alınan "Wine Reviews" veri setini kullanarak şarap puanlarını yıldız derecelerine çevirir ve analiz yapar.
+## Project Details
+- **Dataset**: winemag-data-130k-v2.csv (Downloaded from Kaggle, not uploaded to GitHub, excluded via .gitignore).
+- **Code**: `wine_analysis.py` - Converts ratings to stars, performs country-based analysis, and generates a graph.
+- **Graph**: `star_distribution.png` - Displays the distribution of star ratings.
+- **Branches**:
+  - **main**: Original code with a skyblue graph color.
+  - **feature-color-change**: Graph color changed to orange.
 
-## Proje Detayları
-- **Veri Seti**: `winemag-data-130k-v2.csv` (Kaggle’dan indirildi, GitHub’a yüklenmedi, `.gitignore` ile hariç tutuldu).
-- **Kod**: `wine_analysis.py` - Puanları yıldızlara çevirir, ülkelere göre analiz yapar ve grafik çizer.
-- **Grafik**: `star_distribution.png` - Yıldız derecelerinin dağılımını gösterir.
-
-## Branch’ler
-- **main**: Orijinal kod, grafik rengi mavi (skyblue).
-- **feature-color-change**: Grafik rengi turuncu (orange) olarak değiştirildi.
-
-## Gereksinimler
+## Requirements
 - Python 3.x
-- Kütüphaneler: `pandas`, `numpy`, `matplotlib`
+- Libraries: pandas, numpy, matplotlib
 
-## Nasıl Çalıştırılır?
-1. `winemag-data-130k-v2.csv` dosyasını Kaggle’dan indirin: [Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)
-2. Kütüphaneleri kurun: `pip install pandas numpy matplotlib`
-3. Kodu çalıştırın: `python wine_analysis.py`
+## How to Run
+1. Download the `winemag-data-130k-v2.csv` file from Kaggle: [Wine Reviews](https://www.kaggle.com/datasets)
+2. Install the required libraries:
+   ```bash
+   pip install pandas numpy matplotlib
+   ```
+3. Run the code:
+   ```bash
+   python wine_analysis.py
+   ```
 
-## Ödev Notu
-Bu proje, Git kullanımını göstermek için iki branch ile hazırlanmıştır. Veri seti boyutu nedeniyle GitHub’a yüklenmemiştir.
+## Homework Note
+This project demonstrates the use of Git with two branches.
